@@ -5,9 +5,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FF5A5F;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  box-shadow: 0 2px 12px 0px rgb(0, 0, .2);
+  justify-content: left;
+  background-color: white;
+}
+
+.nav-logo {
+  height: 100px;
+  width: 200px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0;
+  box-shadow: 0px 3px 12px 0px rgb(0, 0, .2);
+  border: 25px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.hero-gallery {
+  height: 400px;
+  width: 670px;
+  margin: 15px;
+}
+
+.hero-text {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.hero-title {
+  width: 670px;
+  font-size: 6vh;
+  margin-bottom: 0px;
+}
+
+.hero-desc {
+  line-height: 45px;
+  width: 670px;
+  font-size: xx-large;
+  margin-top: 3px;
+}
+
+.exp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 670px;
+}
+
+.experience {
+  height: 100px;
+  width: 100%;
 }
