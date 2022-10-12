@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FF5A5F;
+  min-height: fit-content;
 }
 
 code {
@@ -32,16 +33,17 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100%;
+  min-height: auto;
 }
 
 .hero {
   width: 740px;
+  min-height:  100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 0px;
   box-shadow: 0px 3px 12px 0px rgb(0, 0, .2);
   border: 25px;
   border-radius: 20px;
@@ -52,6 +54,7 @@ code {
   height: 400px;
   width: 670px;
   margin: 15px;
+  animation: slide-in 1s;
 }
 
 .hero-text {
@@ -62,25 +65,67 @@ code {
 
 .hero-title {
   width: 670px;
-  font-size: 6vh;
+  font-size: 4vh;
   margin-bottom: 0px;
+  /* animation: fadeIn 3s; */
 }
 
 .hero-desc {
   line-height: 45px;
   width: 670px;
-  font-size: xx-large;
+  font-size: x-large;
   margin-top: 3px;
 }
 
 .exp-container {
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 670px;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .experience {
-  height: 100px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: auto;
+  width: 180px;
+  position: relative;
+}
+
+.exp-info {
+  padding: 20px 0px;
+}
+
+#exp-image {
+  height: 240px;
+  border-radius: 15px;
+}
+
+#exp-avail {
+  height: 25px;
+  width: 70px;
+  background-color: white;
+  border-color: black;
+  border-radius: 5px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
